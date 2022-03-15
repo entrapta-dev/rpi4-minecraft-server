@@ -1,5 +1,17 @@
 # Minecraft Server on Raspberry Pi 4
 
+## Set up and update Raspberry Pi 4
+
+### Prepare SD Card
+
+... blah blah boot to ssh
+
+### Update 
+
+...
+
+---
+
 ## Check Raspberry Pi Model and Revision
 
 Run:  
