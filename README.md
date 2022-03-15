@@ -179,7 +179,41 @@ Reboot.
 
 ## Installing
 
-...
+We're using the open source version instead of the official files because it uses less resources and is a little easier on our Raspberry Pi.  
+
+Create a folder to put the server files into and change into that folder.  
+i.e.: `mkdir papermc-server`, `cd papermc-server`.  
+
+Download the latest version by going to the [https://papermc.io/downloads](papermc download page) and right click on the latest version number and selecting `Copy Link Address` or similar.  
+
+In your terminal use the following command to download the server files into your newly created folder:  
+```
+wget -O server.jar https://papermc.io/api/v2/projects/paper/versions/1.18.2/builds/250/downloads/paper-1.18.2-250.jar
+```
+Do *not* just copy paste the above command. Be sure to use the link to the latest version you copied before.  
+
+After it is done downloading we run the server once like so:  
+```
+java -Xms1024M -Xmx1024M -jar server.jar nogui
+```
+It will stop pretty quickly as we'll have to accept the EULA first.  
+It will have now created a `eula.txt`. Open it and edit the single uncommented line so it'll read `eula=true`.
+
+Start the server again:  
+```
+java -Xms1024M -Xmx1024M -jar server.jar nogui
+```
+
+World generation can take a while. Wait for it to finish and it should say `Done!` in the log along with how much time it took.  
+
+This is all that is necessary for a basic server with all default settings to run.  
+All of the following is technically *optional* but I advice to read through it anyway and make your own customizations as you see fit for your server.  
+
+
+
+**Note:** Mods and modpacks do not work on this version. If you really want mods, install the official server files from here:  
+
+---
 
 ## Configuration
 
