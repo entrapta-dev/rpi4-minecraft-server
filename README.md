@@ -54,9 +54,9 @@ Reboot.
 We're using the open source version called [PaperMC](https://github.com/PaperMC/Paper) instead of the official Minecraft server files because it uses less resources and is a little easier on our Raspberry Pi.  
 
 **Note:** Mods and modpacks __**do not work**__ on this version. If you really want mods, install the official server files instead:  
-Copy the link address from the [official website](https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar) and paste that in the `wget` command.
+To do so, copy the link address from the [official website](https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar) instead of the papermc link and paste that in the `wget` command below.  
 
-All the instructions are the same apart from the `wget` command and the `jar` file will be differently named.  
+All the instructions are the same apart from the `wget` command and the `jar` file will also be differently named.  
 Be sure to put it in a separate folder if you are installing both versions for some reason.  
 
 Create a folder to put the server files into and change into that folder.  
