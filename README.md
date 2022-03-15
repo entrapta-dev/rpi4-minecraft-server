@@ -8,7 +8,6 @@ cat /proc/cpuinfo
 ```
 
 Default output:  
-
 ```
 processor       : 0
 BogoMIPS        : 108.00
@@ -59,11 +58,9 @@ cat /proc/device-tree/model
 
 ---
 
-
 ## Voltage and Frequency Check
 
 Create a `stats.sh` script:
-
 ```
 echo -e "\e[1;33mStatistics:\e[0m" && echo -e Current Frequency - "$id:\t$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)" && echo -e Minimum Frequency - "$id:\t$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq)" && echo -e Maximum Frequency - "$id:\t$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq)" && for id in core sdram_c sdram_i sdram_p ; do echo -e Voltage - "$id:\t$(vcgencmd measure_volts $id)" ; done && echo -e ARM Frequency - "$id:\t$(vcgencmd measure_clock arm)" && echo -e Core Frequency - "$id:\t$(vcgencmd measure_clock arm)" && echo -e Temperature - "$id:\t$(vcgencmd measure_temp)"
 ```
@@ -89,13 +86,11 @@ Temperature - sdram_p:  temp=53.5'C
 NYA
 ```
 
-
 ---
 
 ## Temperature Monitoring
 
 Create a `temps.sh` script to monitor temperature every two seconds:  
-
 ```
 watch -n 2 vcgencmd measure_temp
 ```
@@ -103,3 +98,32 @@ watch -n 2 vcgencmd measure_temp
 Uncooled default should run about 54'C
 
 ---
+
+## Frequency Monitoring
+
+Create a `freqs.sh` script to monitor frequency every second:  
+```
+watch -n 1 vcgencmd measure_clock arm
+```
+
+
+
+---
+
+# Installing the Minecraft Server files
+
+## base install
+
+...
+
+## Configuration
+
+...
+
+---
+
+# Overclocking the Raspberry Pi 4
+
+##
+
+...
