@@ -62,7 +62,7 @@ Be sure to put it in a separate folder if you are installing both versions for s
 Create a folder to put the server files into and change into that folder.  
 e.g.: `mkdir papermc-server`, `cd papermc-server`.  
 
-Download the latest version by going to the [https://papermc.io/downloads](papermc download page) and right click on the latest version number and selecting `Copy Link Address` or similar.  
+Download the latest version by going to the [papermc download page](https://papermc.io/downloads) and right click on the latest version number and selecting `Copy Link Address` or similar.  
 
 In your terminal use the following command to download the server files into your newly created folder:  
 ```
