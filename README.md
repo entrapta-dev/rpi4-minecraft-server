@@ -25,9 +25,12 @@ https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit
 
 ### Set Up and Update Raspberry Pi OS
 
+Boot up the Pi and log in.  
 
-
-...
+Ensure everything is up to date:  
+```
+sudo apt update && sudo apt upgrade
+```
 
 ---
 
@@ -163,7 +166,18 @@ NYA
 
 # Installing the Minecraft Server files
 
-## base install
+## Preparation
+
+Install the latest Java Runtime:  
+```
+sudo apt install openjdk-17-jdk
+```
+
+Reboot.
+
+---
+
+## Installing
 
 ...
 
@@ -208,9 +222,12 @@ arm_freq=2000
 Reboot.
 
 It should now run at 2GHz speed.  
+
 If you want to play it a little safer use the following configuration instead:  
 ```
 #uncomment to overclock the arm. 700 MHz is the default.
 over_voltage=2
 arm_freq=1750
 ```
+
+Verify this by running `stats.sh` or `monitor.sh` again.
