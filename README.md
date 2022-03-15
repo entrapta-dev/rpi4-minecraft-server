@@ -6,7 +6,7 @@
 
 ... blah blah boot to ssh
 
-### Update 
+### Update
 
 ...
 
@@ -127,6 +127,17 @@ watch -n 1 vcgencmd measure_clock arm
 Create a `monitor.sh` scripts to monitor all important stats:  
 ```
 watch -d -n 2 'vcgencmd measure_clock arm ; vcgencmd measure_temp'
+```
+
+Default output should look similar to:  
+```
+frequency(48)=600169920
+temp=55.0'C
+```
+
+Overclocked output should look similar to:  
+```
+NYA
 ```
 
 ---
