@@ -1,8 +1,22 @@
 # Minecraft Server on Raspberry Pi 4
 
+## Minimum Requirements
+- Raspberry Pi 4 2GB
+- USB Type-C Power Adapter
+- 16GB Micro SD Card
+
+More RAM on the Pi and a bigger SD Card is nice but not required.  
+If you plan on running mods or have a lot of players on the server, do go for higher.
+
+---
+
 ## Set up and update Raspberry Pi 4
 
 ### Prepare SD Card
+
+Download the latest Raspberry Pi OS Lite from the official site.  
+We're going for the 64bit lite version as it takes up less space and we're running this headless anyway.  
+https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit  
 
 ... blah blah boot to ssh
 
