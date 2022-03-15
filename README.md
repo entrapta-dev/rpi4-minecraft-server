@@ -175,6 +175,42 @@ NYA
 
 # Overclocking the Raspberry Pi 4
 
-##
+## Preparation
 
-...
+Update the Raspberry Pi OS:  
+```
+sudo apt update && sudo apt upgrade
+```
+
+Check and make note of the default frequency and voltage settings by running the `stats.sh` script we created earlier.  
+
+
+## Overlocking the Pi
+
+Edit the main configuration file:  
+```
+sudo nano /boot/config.txt
+```
+
+Find:  
+```
+#uncomment to overclock the arm. 700 MHz is the default.
+#arm_freq=800
+```
+
+Change it to:  
+```
+#uncomment to overclock the arm. 700 MHz is the default.
+over_voltage=6
+arm_freq=2000
+```
+
+Reboot.
+
+It should now run at 2GHz speed.  
+If you want to play it a little safer use the following configuration instead:  
+```
+#uncomment to overclock the arm. 700 MHz is the default.
+over_voltage=2
+arm_freq=1750
+```
