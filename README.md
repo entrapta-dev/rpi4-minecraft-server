@@ -15,12 +15,17 @@ If you plan on running mods or have a lot of players on the server, do go for hi
 ### Prepare SD Card
 
 Download the latest Raspberry Pi OS Lite from the official site.  
-We're going for the 64bit lite version as it takes up less space and we're running this headless anyway.  
+We're going for the 64-bit lite version as it takes up less space and we're running this headless anyway.  
 https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit  
 
-... blah blah boot to ssh
+1. Flash the image on your SD Card.  
+2. Mount the `boot` partition of the SD Card.  
+3. Create an empty file called `ssh`. You can do this in a terminal with `touch ssh`.
+4. Unmount the SD Card and place it in the Raspberry Pi.
 
-### Update
+### Set Up and Update Raspberry Pi OS
+
+
 
 ...
 
