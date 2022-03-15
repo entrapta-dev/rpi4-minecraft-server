@@ -88,7 +88,9 @@ NYA
 
 ---
 
-## Temperature Monitoring
+## Monitoring
+
+### Temperature Monitoring
 
 Create a `temps.sh` script to monitor temperature every two seconds:  
 ```
@@ -99,14 +101,21 @@ Uncooled default should run about 54'C
 
 ---
 
-## Frequency Monitoring
+### Frequency Monitoring
 
 Create a `freqs.sh` script to monitor frequency every second:  
 ```
 watch -n 1 vcgencmd measure_clock arm
 ```
 
+---
 
+### Monitor Everything
+
+Create a `monitor.sh` scripts to monitor all important stats:  
+```
+watch -d -n 2 'vcgencmd measure_clock arm ; vcgencmd measure_temp'
+```
 
 ---
 
